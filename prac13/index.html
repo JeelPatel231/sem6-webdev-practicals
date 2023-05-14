@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Practical 12 | Calculator</title>
+  <script>
+    const eventHandler = (callback) => {
+      let a = document.getElementById("number1").valueAsNumber
+      let b = document.getElementById("number2").valueAsNumber
+      document.getElementById("answer").innerText = callback(a, b)
+    }
+    const add = (a, b) => a + b
+    const sub = (a, b) => a - b
+    const mul = (a, b) => a * b
+    const div = (a, b) => a / b
+  </script>
+</head>
+
+<body>
+  <input type="number" id="number1"> <br>
+  <input type="number" id="number2"> <br>
+
+  <button type="button" onclick="eventHandler(add)">+</button>
+  <button type="button" onclick="eventHandler(sub)">-</button>
+  <button type="button" onclick="eventHandler(mul)">*</button>
+  <button type="button" onclick="eventHandler(div)">/</button>
+
+  <div>
+    Answer :
+    <span id="answer">0</span>
+  </div>
+
+</body>
+
+</html>

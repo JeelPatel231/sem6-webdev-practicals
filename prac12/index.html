@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Practical 13 | Alert Confirm Prompt</title>
+
+  <script>
+    const showAlert = () => {
+      alert("Alerted the user")
+    }
+    const showConfirm = () => {
+      if (confirm("Confirm ?")) {
+        alert("You confirmed the option")
+      } else {
+        alert("You did not accept the option")
+      }
+    }
+
+    const showPopup = () => {
+      let person = prompt("Please enter your name", "");
+      let text;
+      if (!person) {
+        alert("User cancelled the prompt.");
+      } else {
+        alert("Hello " + person + "! How are you today?");
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <button type="button" onclick="showAlert()">Alert</button>
+  <button type="button" onclick="showPopup()">Popup</button>
+  <button type="button" onclick="showConfirm()">Confirm</button>
+</body>
+
+</html>

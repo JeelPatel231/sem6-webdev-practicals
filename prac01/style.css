@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  text-align: center;
+}
+h1,
+h2 {
+  margin: 0;
+}
+h2 {
+  color: #555;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+section {
+  margin-bottom: 20px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li:before {
+  content: "•";
+  color: #555;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+  color: #555;
+}

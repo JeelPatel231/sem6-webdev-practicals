@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Css Animation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    @keyframes move {
+      0% {
+        left: 0;
+        top: 0;
+        background-color: red;
+      }
+
+      25% {
+        left: 100px;
+        top: 0;
+        background-color: blue;
+      }
+
+      50% {
+        left: 100px;
+        top: 100px;
+        background-color: green;
+      }
+
+      75% {
+        left: 0;
+        top: 100px;
+        background-color: yellow;
+      }
+
+      100% {
+        left: 0;
+        top: 0;
+        background-color: red;
+      }
+    }
+
+    .animated {
+      animation: move 1s ease-in-out infinite;
+      background-color: red;
+      height: 30px;
+      width: 30px;
+      position: relative;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="animated"></div>
+</body>
+
+</html>
