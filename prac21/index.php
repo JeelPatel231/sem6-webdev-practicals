@@ -5,7 +5,7 @@ username : <input type="text" name="username"></br>
 
 <?php
     
-    require("connection.php");
+    require("../connection/connection.php");
     
     if(!isset($_GET["username"])) {
         echo "username query param is empty";

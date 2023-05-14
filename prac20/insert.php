@@ -1,6 +1,6 @@
 <?php
 
-require("connection.php");
+require("../connection/connection.php");
 
 // Prepare and execute the SQL statement
 $sql = "INSERT INTO person (username, password) VALUES (?, ?)";

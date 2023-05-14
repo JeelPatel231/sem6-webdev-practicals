@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Slider</title>
+  <style>
+    .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      width: 500px;
+      height: 300px;
+    }
+
+    .slider img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slider img.active {
+      opacity: 1;
+    }
+
+    .slider-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .slider-nav span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #999;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+
+    .slider-nav span.active {
+      background-color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="slider">
+      <img src="https://picsum.photos/400?random=1" alt="Image 1" class="active">
+      <img src="https://picsum.photos/400?random=2" alt="Image 2">
+      <img src="https://picsum.photos/400?random=3" alt="Image 3">
+    </div>
+    <div class="slider-nav">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var slider = $('.slider img');
+      var navItems = $('.slider-nav span');
+
+      // Set the first image and navigation item as active
+      slider.first().addClass('active');
+      navItems.first().addClass('active');
+
+      // Navigation item click event
+      navItems.click(function () {
+        var index = $(this).index();
+
+        // Remove active class from all images and navigation items
+        slider.removeClass('active');
+        navItems.removeClass('active');
+
+        // Add active class to the selected image and navigation item
+        slider.eq(index).addClass('active');
+        $(this).addClass('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

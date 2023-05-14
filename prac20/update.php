@@ -1,5 +1,5 @@
 <?php
-require("connection.php");
+require("../connection/connection.php");
 
 // Prepare and execute the SQL statement
 $sql = "UPDATE person SET password = ? WHERE username = ?";
