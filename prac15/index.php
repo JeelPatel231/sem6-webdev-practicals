@@ -1,5 +1,6 @@
 <html>
   <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <title> Sum Of Numbers </title>
   </head>
   <body>
@@ -20,7 +21,7 @@
       $total += (int)$num;
     }
 
-    echo "Sum of " . $number_string . " is " . $total;
+    echo "<h1>" . join("+", $number_string_arr) . " = " . $total . "</h1>";
   ?>
 </body>
 </html>

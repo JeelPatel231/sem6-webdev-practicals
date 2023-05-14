@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Get Details from URL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
 <form>
 username : <input type="text" name="username"></br>
 <input type="Submit" value="submit" >
@@ -38,4 +49,5 @@ username : <input type="text" name="username"></br>
     $stmt->close();
 
 ?>
-
+</body>
+</html>

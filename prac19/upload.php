@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <title>Registration Form</title>
+</head>
+<body>
+
 <?php
 
     $allowedTypes = ['image/jpeg', 'image/gif'];
@@ -22,4 +31,5 @@
     }
 
 ?>
-
+</body>
+</html>

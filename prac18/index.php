@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <title>Registration Form</title>
+</head>
+<body>
 <?php
 
 
@@ -14,3 +22,6 @@ echo join("+",$myArray) . " = " . $sum;
 echo "</h1>";
 
 ?>
+
+</body>
+</html>

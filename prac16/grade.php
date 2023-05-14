@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <title>Grade Calculator</title>
+</head>
+<body>
+
+
 <?php
 
 function calculateGrade($percentage) {
@@ -54,3 +64,4 @@ echo "<h4> Percentage: " . $percentage . "%</br>";
 echo "Grade: " . calculateGrade($percentage) . "</br> </h4>";
 ?>
 
+</body>

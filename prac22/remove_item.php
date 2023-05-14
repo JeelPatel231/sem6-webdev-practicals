@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DB Operations</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
 <?php
 session_start();
 
@@ -24,3 +35,6 @@ require("shopping_cart.php");
     
     <input type="submit" value="Remove from Cart">
 </form>
+
+</body>
+</html>

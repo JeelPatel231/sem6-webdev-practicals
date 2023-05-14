@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <title>Prime Number Checker</title>
+</head>
+
+<body>
+  <h2>Prime Number Checker</h2>
+  <form action="" method="GET">
+    <label for="number">Enter a number:</label>
+    <input type="number" name="number" id="number" required><br><br>
+
+    <input type="submit" value="Check">
+  </form>
+
 <?php
 // Function to check if a number is prime
 function isPrime($number) {
@@ -32,21 +49,6 @@ if (isset($_GET['number'])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Prime Number Checker</title>
-</head>
-
-<body>
-  <h2>Prime Number Checker</h2>
-  <form action="" method="GET">
-    <label for="number">Enter a number:</label>
-    <input type="number" name="number" id="number" required><br><br>
-
-    <input type="submit" value="Check">
-  </form>
 </body>
 
 </html>

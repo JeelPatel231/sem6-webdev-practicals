@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <title>Registration Form</title>
+</head>
+<body>
 <?php
 
 $error_array = array();
@@ -41,7 +49,7 @@ if (empty($_POST["name"])) {
         echo "<h1>No Errors Found. Everything is Valid!</h1>";
     } else {
         echo "<table border=1 cellpadding=10 cellspacing=5>";
-        echo "<tr><th>Subject</th><th>Marks</th></tr>";
+        echo "<tr><th>Field</th><th>Error</th></tr>";
         foreach ($_POST as $key => $value) {
             if (isset($error_array[$key])) {
                 echo "<tr><td>$key</td><td>" . $error_array[$key] . "</td></tr>";
@@ -50,3 +58,6 @@ if (empty($_POST["name"])) {
     }
 ?>
 </table>
+
+</body>
+</html>
